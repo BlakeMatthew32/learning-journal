@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav styling */
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 1.5em;
+    letter-spacing: 0.5;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 0 0 2em;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    text-decoration: underline;
+    color: #333;
+}
+
+/* main article styling */
+
+.top-post {
+    background-image: url(images/laptop-img-1.jpg);
+    background-size: cover;
+    backdrop-filter: opacity(20%);
+    padding: 8em 2em 3em;
+    color: #eee;
+    /* text-shadow: 0 0 2px #eee; */
+}
+
+.main-heading {
+    font-size: 2rem;
+    margin: .5em 0;
+}
+
+.main-text {
+    letter-spacing: 2;
+}
+
