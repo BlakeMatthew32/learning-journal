@@ -40,9 +40,8 @@ body {
 /* main article styling */
 
 .top-post {
-    background-image: url(images/laptop-img-1.jpg);
+    background-image: url(images/laptop-img-3.jpg);
     background-size: cover;
-    backdrop-filter: opacity(20%);
     padding: 8em 2em 3em;
     color: #eee;
     /* text-shadow: 0 0 2px #eee; */
@@ -56,4 +55,20 @@ body {
 .main-text {
     letter-spacing: 2;
 }
+
+
+/* post links styling */
+
+.all-posts {
+    display: grid;
+    grid-template-columns: 1em repeat(auto-fit, 200px, 1fr) 1em;
+    margin: 2em auto 2em;
+    padding: 0 20px
+}
+
+.blog-tile > img {
+    width: 100%;
+}
+
+
 
