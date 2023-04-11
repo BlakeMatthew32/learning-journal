@@ -40,11 +40,11 @@ body {
 /* main article styling */
 
 .top-post {
-    background-image: url(images/laptop-img-3.jpg);
+    background-image: url(images/laptop-img-2.jpg);
     background-size: cover;
-    padding: 8em 2em 3em;
+    background-position: 10px;
+    padding: 10em 2em 5em;
     color: #eee;
-    /* text-shadow: 0 0 2px #eee; */
 }
 
 .main-heading {
@@ -53,6 +53,7 @@ body {
 }
 
 .main-text {
+    max-width: 700px;
     letter-spacing: 2;
 }
 
@@ -63,21 +64,85 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1em;
-    margin: 2em auto 2em;
+    margin: 3em auto 1em;
     padding: 0 20px;
+}
+
+.blog-tile {
+    margin-bottom: 2em;
+    letter-spacing: 0.8;
 }
 
 .blog-tile > img {
     width: 100%;
     height: 250px;
+    margin-bottom: 1.2em;
+    border-radius: 5px;
+    object-fit: cover;
 }
 
+.blog-tile > time {
+    font-size: 0.875rem;
+}
+
+.blog-tile > h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.4em 0;
+}
+
+.view-more {
+    display: none;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-decoration: underline;
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
+}
+
+/* footer styling */
+
+footer {
+    text-align: center;
+    margin-top: 2.75em;
+    padding: 2.375em;
+    background-color: #202020;
+    color: #fff;
+}
+
+.footer-text {
+    font-weight: 600;
+    letter-spacing: 0.8;
+}
+
+.copy-right {
+    margin-top: 0.5em;
+    font-size: 0.875rem;
+    font-weight: 300;
+    opacity: 0.6;
+
+}
+
+
 /* utilities */
+.btn {
+    font-family: inherit;
+}
 
 
-@media (maxwidth: 548px) {
+.btn:hover {
+    cursor: pointer;
+}
+
+
+@media (max-width: 548px) {
     .hidden {
         display: none;
+    }
+
+    .btn {
+        display: block;
     }
 }
 
