@@ -1,7 +1,12 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="styles.css" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
 
         <!-- google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,7 +14,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap" rel="stylesheet">
     </head>
     <body>
-
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
         <header>
             <nav class="main-nav">
                 <h3 class="logo">
@@ -24,18 +31,38 @@
         </header>
 
         <main>
-            <section class="top-post">
-                <a href="mainPost.html">
-                    <time class="date">APRIL 02, 2023</time>
-                    <h1 class="main-heading">My new journey as a bootcamp student</h1>
-                    <p class="main-text">After several months of learning in the Frontend Developer Career Path, 
-                        I've made the big jump over to the Bootcamp to get expert code reviews of 
-                        my Solo Projects projects and meet like-minded peers.
-                    </p>
-                </a>
-                
+            <section class="blog-article">
+                <time> APRIL 02, 2023</time>
+                <h1 class="article-heading">My new journey as a bootcamp student.</h1>
+                <p>After several months of learning in the Frontend Developer Career Path, 
+                    I've made the big jump over to the Bootcamp to get expert code reviews 
+                    of my Solo Projects projects and meet like-minded peers.
+                </p>
+                <img class="article-img" src="images/laptop-img-1.jpg">
+                <h4>How I stay committed to learning</h4>
+                <p>I like to think of myself as a lifelong learner. I used to spend hours and 
+                    hours learning, then try to create simple projects using what I learned or 
+                    work new techniques into existing projects.
+                </p>
+                <p>While that was fun, I felt like it would be helpful to share what I was 
+                    learning and most things about my journey with the world.
+                </p>
+                <h4>How I got started</h4>
+                <p>I started simple and gradually grew my learning journal site. I would take 
+                    notes about what I was learning. After each learning session, I'd use my 
+                    notes to not only reflect on what I learned but also write short summaries 
+                    of what I learned using my own words.
+                </p>
+                <p>That helped me grok what I was learning, and I realized that posting my 
+                    learning summaries was also helping others learn and stay motivated.
+                </p>
             </section>
-            
+
+            <div class="recent-post-heading">
+                <p>Recent Posts</p>
+            </div>
+
+
             <section class="all-posts">
                 <div class="blog-tile">
                     <img src="images/laptop-img-1.jpg">
@@ -61,37 +88,13 @@
                         After several months of learning in the Frontend Developer Career Path.
                     </p>
                 </div>
-                <div class="blog-tile hidden">
-                    <img src="images/laptop-img-3.jpg">
-                    <time> APRIL 02, 2023</time>
-                    <h3>Blog four</h3>
-                    <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! 
-                        After several months of learning in the Frontend Developer Career Path.
-                    </p>
-                </div>
-                <div class="blog-tile hidden">
-                    <img src="images/dark-laptop.jpg">
-                    <time> APRIL 02, 2023</time>
-                    <h3>Blog five</h3>
-                    <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! 
-                        After several months of learning in the Frontend Developer Career Path.
-                    </p>
-                </div>
-                <div class="blog-tile hidden">
-                    <img src="images/laptop-img-1.jpg">
-                    <time> APRIL 02, 2023</time>
-                    <h3>Blog six</h3>
-                    <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! 
-                        After several months of learning in the Frontend Developer Career Path.
-                    </p>
-                </div>
             </section>
-            <button class="btn view-more">View More</button>
         </main>
-
+        
         <footer>
             <p class="footer-text">My Learning Journal</p>
             <p class="copy-right">Copyright 2023</p>
         </footer>
+        
     </body>
 </html>

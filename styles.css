@@ -44,10 +44,15 @@ body {
     background-size: cover;
     background-position: 10px;
     padding: 10em 2em 5em;
+}
+
+.top-post > a {
+    text-decoration: none;
     color: #eee;
 }
 
-.main-heading {
+.main-heading,
+.article-heading {
     font-size: 2rem;
     margin: .5em 0;
 }
@@ -73,7 +78,7 @@ body {
     letter-spacing: 0.8;
 }
 
-.blog-tile > img {
+img {
     width: 100%;
     height: 250px;
     margin-bottom: 1.2em;
@@ -81,7 +86,8 @@ body {
     object-fit: cover;
 }
 
-.blog-tile > time {
+.blog-tile > time,
+.blog-article > time {
     font-size: 0.875rem;
 }
 
@@ -99,6 +105,45 @@ body {
     margin: 0 auto;
     background-color: transparent;
     border: none;
+}
+
+
+/* main post article */
+
+.blog-article,
+.about-me-section {
+    margin: 2em auto 3.5em;
+    padding: 1.25em;
+    max-width: 980px;
+}
+
+.blog-article > p,
+.about-me-section > p {
+    margin: 1.5em 0;
+    line-height: 1.2;
+}
+
+.recent-post-heading {
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* about me */
+
+.flex-container {
+    margin-bottom: 3em;
+}
+
+.avatar-img {
+    width: 182px;
+    height: 182px;
+    border-radius: 50%;
+}
+
+.about-heading {
+    margin-bottom: 1em;
 }
 
 /* footer styling */
@@ -125,6 +170,7 @@ footer {
 }
 
 
+
 /* utilities */
 .btn {
     font-family: inherit;
@@ -135,6 +181,19 @@ footer {
     cursor: pointer;
 }
 
+
+
+@media (min-width: 650px) {
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .about-me-opening {
+        margin-left: 5%; 
+    }
+}
 
 @media (max-width: 548px) {
     .hidden {
